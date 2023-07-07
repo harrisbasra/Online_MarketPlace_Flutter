@@ -1,6 +1,6 @@
 # madgascar
 
-A paid Flutter project.
+A mega Flutter project.
 
 ## Getting Started
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:madgascar/Review_Page032.dart';
 import 'package:madgascar/setting_page040.dart';
 
 class sign_in extends StatelessWidget{
@@ -7,6 +8,7 @@ class sign_in extends StatelessWidget{
   Widget build(BuildContext context) {
     bool _passwordVisible = false;
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body:  Padding(
         padding: const EdgeInsets.all(20.0),
         child: Column(
@@ -171,7 +173,7 @@ class sign_in extends StatelessWidget{
                   minimumSize: Size(double.infinity, 45),
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=> setting_page040()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=> Review_Page032()));
                 },
                 child: Text(
                   'Sign In',

@@ -5,6 +5,7 @@ class otp_page extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       //appBar: ,
       body: Padding(
         padding: const EdgeInsets.all(20.0),
