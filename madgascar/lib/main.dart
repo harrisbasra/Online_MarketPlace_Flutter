@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:madgascar/otp_page.dart';
 
+import 'Checker.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -76,6 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 45,
                     child: TextField(
                       decoration: InputDecoration(
+                        hintText: 'First Name',
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5),
                           borderSide: BorderSide(
@@ -100,6 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 45,
                     child: TextField(
                       decoration: InputDecoration(
+                        hintText: 'Last Name',
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5),
                           borderSide: BorderSide(
@@ -169,6 +173,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     height: 45,
                     child: TextField(
                       decoration: InputDecoration(
+                        hintText: 'Phone Number',
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5),
                           borderSide: BorderSide(
@@ -199,6 +204,7 @@ class _MyHomePageState extends State<MyHomePage> {
               height: 45,
               child: TextField(
                 decoration: InputDecoration(
+                  hintText: 'Email',
                     focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5),
                         borderSide: BorderSide(
@@ -221,7 +227,9 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Container(
               height: 45,
               child: TextField(
+                obscureText: true,
                 decoration: InputDecoration(
+                  hintText: 'Password',
                     focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(5),
                         borderSide: BorderSide(
@@ -268,7 +276,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 minimumSize: Size(double.infinity, 45),
               ),
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context)=> otp_page()));
+                Navigator.push(context, MaterialPageRoute(builder: (context)=> Checker()));
               },
               child: Text(
                 'Sign Up',

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+import 'Checker.dart';
+
 class setting_page040 extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -17,19 +19,274 @@ class setting_page040 extends StatelessWidget{
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
           onPressed: () {
-            // Handle back button press
+            Navigator.push(context, MaterialPageRoute(builder: (context)=> Checker()));
           },
         ),
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
+
+
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                Text(
+                  Text(
+                    'Personal Information',
+                    style: TextStyle(
+                      color: Color.fromRGBO(219, 185, 88, 1),
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  SizedBox(height: 20),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          'Full Name',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Text(
+                          'User Name',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black12,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: TextField(
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                            ),
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              fillColor: Colors.white12,
+                              filled: true,
+
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black12,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: TextField(
+                            obscuringCharacter: '*',
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                            ),
+                            obscureText: false,
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              fillColor: Colors.white12,
+                              filled: true,
+                              prefixText: '@',
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  //....................
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          'Gender',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Text(
+                          'Birthday',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+
+                          decoration: BoxDecoration(
+                            color: Colors.black12,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Column(
+                            children: [
+                              Row(
+                                children: [
+                                  Radio<Color>(
+                                    value: Color.fromRGBO(219, 185, 88, 1), // Selected color
+                                    groupValue: null,
+                                    onChanged: (color) {
+                                      // setState(() {
+                                      //   selectedColor = color;
+                                      // });
+                                    },
+                                  ),
+                                  Text(
+                                    'Male',
+                                    style: TextStyle(
+                                      fontSize: 10,
+                                      color: Colors.black.withOpacity(0.5),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  Radio<Color>(
+                                    value: Color.fromRGBO(219, 185, 88, 1), // Selected color
+                                    groupValue: null,
+                                    onChanged: (color) {
+                                      // setState(() {
+                                      //   selectedColor = color;
+                                      // });
+                                    },
+                                  ),
+                                  Text(
+                                    'Female',
+                                    style: TextStyle(
+                                      fontSize: 10,
+                                      color: Colors.black.withOpacity(0.5),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black12,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: TextField(
+                            keyboardType: TextInputType.datetime,
+                            obscuringCharacter: '*',
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                            ),
+                            obscureText: false,
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              fillColor: Colors.white12,
+                              filled: true,
+                              //prefixText: '@',
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  //...................
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          'Phone Number',
+                          style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black12,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: TextField(
+                            keyboardType: TextInputType.number,
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                            ),
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              fillColor: Colors.white12,
+                              filled: true,
+                              prefixText: '+'
+                            ),
+                          ),
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Expanded(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: Colors.black12,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: TextField(
+                            keyboardType: TextInputType.number,
+                            obscuringCharacter: '*',
+                            textAlign: TextAlign.start,
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                            ),
+                            obscureText: false,
+                            decoration: InputDecoration(
+                              border: InputBorder.none,
+                              fillColor: Colors.white12,
+                              filled: true,
+                             // prefixText: '@',
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  SizedBox(height: 10),
+                  Text(
                 'Password',
                 style: TextStyle(
                   color: Color.fromRGBO(219, 185, 88, 1),
@@ -53,6 +310,7 @@ class setting_page040 extends StatelessWidget{
                   borderRadius: BorderRadius.circular(10),
                 ),
                 child: TextField(
+                  obscureText: true,
                   textAlign: TextAlign.start,
                   style: TextStyle(
                     fontWeight: FontWeight.w600,
