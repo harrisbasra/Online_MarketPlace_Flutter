@@ -3,16 +3,21 @@ import 'package:flutter/material.dart';
 import 'package:madgascar/Order_Cancellation038.dart';
 import 'package:madgascar/Order_Details037.dart';
 import 'package:madgascar/Review_Page032.dart';
+import 'package:madgascar/livestreamer_showing010.dart';
 import 'package:madgascar/main.dart';
 import 'package:madgascar/my_order036.dart';
 import 'package:madgascar/otp_page.dart';
 import 'package:madgascar/payment_confirmation035.dart';
 import 'package:madgascar/payment_page034.dart';
+import 'package:madgascar/product_page030.dart';
 import 'package:madgascar/reviews_page031.dart';
 import 'package:madgascar/search_bar024.dart';
 import 'package:madgascar/setting_page040.dart';
 import 'package:madgascar/sign_in.dart';
+import 'package:madgascar/streamer_profiles011.dart';
 import 'package:madgascar/success_page.dart';
+
+import 'all_activity023.dart';
 
 class Checker extends StatelessWidget{
   @override
@@ -44,9 +49,9 @@ class Checker extends StatelessWidget{
                   children: [
                     ElevatedButton(
                       onPressed: () {
-                       // Navigator.push(context, MaterialPageRoute(builder: (context)=> MyHomePage()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> streamer_profiles011()));
                       },
-                      child: Text('Main'),
+                      child: Text('Live Streamer Profile Card'),
                     ),
                     SizedBox(width: 8),
                     ElevatedButton(
@@ -58,9 +63,9 @@ class Checker extends StatelessWidget{
                     SizedBox(width: 8),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> success_page()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> product_page030()));
                       },
-                      child: Text('Success Page '),
+                      child: Text('Product Page '),
                     ),
                     SizedBox(width: 8),
                     ElevatedButton(
@@ -155,16 +160,16 @@ class Checker extends StatelessWidget{
                     SizedBox(width: 8),
                     ElevatedButton(
                       onPressed: () {
-                        // Button 3 onPressed logic
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> ActivityPage()));
                       },
-                      child: Text('Button 3'),
+                      child: Text('All Activity (023)'),
                     ),
                     SizedBox(width: 8),
                     ElevatedButton(
                       onPressed: () {
-                        // Button 15 onPressed logic
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> livestreamer010()));
                       },
-                      child: Text('Button 15'),
+                      child: Text('View Live Streamers'),
                     ),
                   ],
                 )
