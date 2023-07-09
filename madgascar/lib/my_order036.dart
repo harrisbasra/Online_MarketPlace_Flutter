@@ -113,45 +113,51 @@ class my_order036 extends StatelessWidget{
                         ),
                       ),
                     ),
+                    Text("---------------------------------------------"),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8.0),
+                      child: Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text(
+                              'Processing Date',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w800,
+
+                              ),
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  'In Progress',
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w600,
+                                      color: Color.fromRGBO(219, 185, 88, 1)
+                                  ),
+                                ),
+                                SizedBox(width: 10,),
+                                Text(
+                                '20/08/23',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black87,
+                                ),
+                              ),
+                              ],
+                            )
+
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
                 Expanded(child: SizedBox(width: 10,)),
-                Padding(
-                  padding: const EdgeInsets.only(right: 8.0),
-                  child: Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          'Processing Date',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w800,
-
-                          ),
-                        ),
-                        Text(
-                          '20/08/23',
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.black87,
-                          ),
-                        ),
-                      SizedBox(height: 50,),
-                        Text(
-                          'In Progress',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w600,
-                            color: Color.fromRGBO(219, 185, 88, 1)
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
               ],
             ),
           ),
@@ -241,45 +247,51 @@ class my_order036 extends StatelessWidget{
                         ),
                       ),
                     ),
+                    Text("---------------------------------------------"),
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8.0),
+                      child: Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text(
+                              'Processing Date',
+                              style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.w800,
+
+                              ),
+                            ),
+                            Row(
+                              children: [
+                                Text(
+                                  'In Progress',
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w600,
+                                      color: Color.fromRGBO(219, 185, 88, 1)
+                                  ),
+                                ),
+                                SizedBox(width: 10,),
+                                Text(
+                                  '20/08/23',
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w600,
+                                    color: Colors.black87,
+                                  ),
+                                ),
+                              ],
+                            )
+
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
                 Expanded(child: SizedBox(width: 10,)),
-                Padding(
-                  padding: const EdgeInsets.only(right: 8.0),
-                  child: Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          'Processing Date',
-                          style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w800,
-
-                          ),
-                        ),
-                        Text(
-                          '20/08/23',
-                          style: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w600,
-                            color: Colors.black87,
-                          ),
-                        ),
-                        SizedBox(height: 50,),
-                        Text(
-                          'In Progress',
-                          style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w600,
-                              color: Color.fromRGBO(219, 185, 88, 1)
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
               ],
             ),
           ),

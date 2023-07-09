@@ -53,293 +53,337 @@ class Order_Details037 extends StatelessWidget{
         child: Padding(
           padding: const EdgeInsets.all(10.0),
           child: Column(
+            children: [Column(
             children: [
-              Card(
-                elevation: 1,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(10),
-                        child: Image.asset(
-                          'assets/images/product.png',
-                          width: 120,
-                          height: 100,
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: 10),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+              Column(
+                children: [
+                  Card(
+                    elevation: 1,
+                    child: Row(
                       children: [
-                        Row(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                              child: CircleAvatar(
-                                // User's profile picture
-                                radius: 25,
-                                // Replace with the appropriate image source
-                                backgroundImage: AssetImage('assets/images/user.png'),
-                              ),
-                            ),
-                            SizedBox(width: 10),
-                            Text(
-                              'by Harrey Be',
-                            ),
-                          ],
-                        ),
-                        Text(
-                          'iPhone 12 Pro',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w600,
-                            fontSize: 18,
-                          ),
-                        ),
-                        SizedBox(height: 10),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.star,
-                              color: Color.fromRGBO(219, 185, 88, 1),
-                            ),
-                            Icon(
-                              Icons.star,
-                              color: Color.fromRGBO(219, 185, 88, 1),
-                            ),
-                            Icon(
-                              Icons.star,
-                              color: Color.fromRGBO(219, 185, 88, 1),
-                            ),
-                            Icon(
-                              Icons.star,
-                              color: Color.fromRGBO(219, 185, 88, 1),
-                            ),
-                            Icon(
-                              Icons.star_border,
-                              color: Color.fromRGBO(219, 185, 88, 1),
-                            ),
-                            SizedBox(width: 5),
-                            Text(
-                              '(180)',
-                              style: TextStyle(
-                                fontWeight: FontWeight.w300,
-                              ),
-                            ),
-                          ],
-                        ),
-                        SizedBox(height: 10),
                         Padding(
-                          padding: const EdgeInsets.only(bottom: 8),
-                          child: Text(
-                            '\$879',
-                            style: TextStyle(
-                              color: Color.fromRGBO(219, 185, 88, 1),
+                          padding: const EdgeInsets.all(8.0),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(10),
+                            child: Image.asset(
+                              'assets/images/product.png',
+                              width: 120,
+                              height: 100,
                             ),
                           ),
                         ),
+                        SizedBox(width: 10),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
+                                  child: CircleAvatar(
+                                    // User's profile picture
+                                    radius: 25,
+                                    // Replace with the appropriate image source
+                                    backgroundImage: AssetImage('assets/images/user.png'),
+                                  ),
+                                ),
+                                SizedBox(width: 10),
+                                Text(
+                                  'by Harrey Be',
+                                ),
+                              ],
+                            ),
+                            Text(
+                              'iPhone 12 Pro',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                fontSize: 18,
+                              ),
+                            ),
+                            SizedBox(height: 10),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromRGBO(219, 185, 88, 1),
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromRGBO(219, 185, 88, 1),
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromRGBO(219, 185, 88, 1),
+                                ),
+                                Icon(
+                                  Icons.star,
+                                  color: Color.fromRGBO(219, 185, 88, 1),
+                                ),
+                                Icon(
+                                  Icons.star_border,
+                                  color: Color.fromRGBO(219, 185, 88, 1),
+                                ),
+                                SizedBox(width: 5),
+                                Text(
+                                  '(180)',
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.w300,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 10),
+                            Padding(
+                              padding: const EdgeInsets.only(bottom: 8),
+                              child: Text(
+                                '\$879',
+                                style: TextStyle(
+                                  color: Color.fromRGBO(219, 185, 88, 1),
+                                ),
+                              ),
+                            ),
+                            Text("---------------------------------------------"),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 8.0),
+                              child: Expanded(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.end,
+                                  children: [
+                                    Text(
+                                      'Processing Date',
+                                      style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w800,
+
+                                      ),
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text(
+                                          'In Progress',
+                                          style: TextStyle(
+                                              fontSize: 18,
+                                              fontWeight: FontWeight.w600,
+                                              color: Color.fromRGBO(219, 185, 88, 1)
+                                          ),
+                                        ),
+                                        SizedBox(width: 10,),
+                                        Text(
+                                          '20/08/23',
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            fontWeight: FontWeight.w600,
+                                            color: Colors.black87,
+                                          ),
+                                        ),
+                                      ],
+                                    )
+
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Expanded(child: SizedBox(width: 10,)),
                       ],
                     ),
-                    Expanded(child: SizedBox(width: 10,)),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 8.0),
-                      child: Expanded(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            Text(
-                              'Processing Date',
-                              style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w800,
-
-                              ),
-                            ),
-                            Text(
-                              '20/08/23',
-                              style: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w600,
-                                color: Colors.black87,
-                              ),
-                            ),
-                            SizedBox(height: 50,),
-                            Text(
-                              'In Progress',
-                              style: TextStyle(
-                                  fontSize: 18,
-                                  fontWeight: FontWeight.w600,
-                                  color: Color.fromRGBO(219, 185, 88, 1)
-                              ),
-                            ),
-                          ],
+                  ),
+                  SizedBox(height: 16),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          height: 1,
+                          color: Color.fromRGBO(0, 0, 0, 0.3),
+                          child: CustomPaint(
+                            painter: DashedLinePainter(),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 16),
-              Row(
-                children: [
-                  Expanded(
-                    child: Container(
-                      height: 1,
-                      color: Color.fromRGBO(0, 0, 0, 0.3),
-                      child: CustomPaint(
-                        painter: DashedLinePainter(),
+                    ],
+                  ),
+                  SizedBox(height: 16),
+                  Row(
+                    children: [
+                      Text(
+                        'Order Date: ',
+                        style: TextStyle(
+                          fontWeight: FontWeight.w600,
+                          color: Color.fromRGBO(219, 185, 88, 1),
+                          fontSize: 20
+                        ),
                       ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16),
-              Row(
-                children: [
-                  Text(
-                    'Order Date: ',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w600,
-                      color: Color.fromRGBO(219, 185, 88, 1),
-                      fontSize: 20
-                    ),
-                  ),
-                  Spacer(),
-                  Text(
-                    '19/02/2022',
-                    style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      color: Colors.black,
-                      fontSize: 18
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16),
-              Divider(
-                color: Color.fromRGBO(0, 0, 0, 0.3),
-                height: 1,
-                thickness: 1,
-              ),
-              SizedBox(height: 16),
-              Row(
-                children: [
-                  Text(
-                    'ETA',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        color: Color.fromRGBO(219, 185, 88, 1),
-                        fontSize: 20
-                    ),
-                  ),
-                  Spacer(),
-                  Text(
-                    '05/03/2022',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black,
-                        fontSize: 18
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16),
-              Divider(
-                color: Color.fromRGBO(0, 0, 0, 0.3),
-                height: 1,
-                thickness: 1,
-              ),
-              SizedBox(height: 16),
-              Row(
-                children: [
-                  Text(
-                    'Status',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        color: Color.fromRGBO(219, 185, 88, 1),
-                        fontSize: 20
-                    ),
-                  ),
-                  Spacer(),
-                  Text(
-                    'in progress',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black,
-                        fontSize: 18
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16),
-              Divider(
-                color: Color.fromRGBO(0, 0, 0, 0.3),
-                height: 1,
-                thickness: 1,
-              ),
-              SizedBox(height: 16),
-              Row(
-                children: [
-                  Text(
-                    'Vendor',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        color: Color.fromRGBO(219, 185, 88, 1),
-                        fontSize: 20
-                    ),
-                  ),
-                  Spacer(),
-                  Text(
-                    'Megan Barnett',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        color: Colors.black,
-                        fontSize: 18
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16),
-              Divider(
-                color: Color.fromRGBO(0, 0, 0, 0.3),
-                height: 1,
-                thickness: 1,
-              ),
-              SizedBox(height: 16),
-              Row(
-                children: [
-                  Text(
-                    'Delivery Address',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        color: Color.fromRGBO(219, 185, 88, 1),
-                        fontSize: 20
-                    ),
-                  ),
-                  Spacer(),
-                  Flexible(
-                    child: Text(
-                      '4536 Kelley Road, Gulfport, Congo',
-                      style: TextStyle(
+                      Spacer(),
+                      Text(
+                        '19/02/2022',
+                        style: TextStyle(
                           fontWeight: FontWeight.w400,
                           color: Colors.black,
                           fontSize: 18
+                        ),
                       ),
-                    ),
+                    ],
                   ),
+                  SizedBox(height: 16),
+                  Divider(
+                    color: Color.fromRGBO(0, 0, 0, 0.3),
+                    height: 1,
+                    thickness: 1,
+                  ),
+                  SizedBox(height: 16),
+                  Row(
+                    children: [
+                      Text(
+                        'ETA',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            color: Color.fromRGBO(219, 185, 88, 1),
+                            fontSize: 20
+                        ),
+                      ),
+                      Spacer(),
+                      Text(
+                        '05/03/2022',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                            fontSize: 18
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 16),
+                  Divider(
+                    color: Color.fromRGBO(0, 0, 0, 0.3),
+                    height: 1,
+                    thickness: 1,
+                  ),
+                  SizedBox(height: 16),
+                  Row(
+                    children: [
+                      Text(
+                        'Status',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            color: Color.fromRGBO(219, 185, 88, 1),
+                            fontSize: 20
+                        ),
+                      ),
+                      Spacer(),
+                      Text(
+                        'in progress',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                            fontSize: 18
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 16),
+                  Divider(
+                    color: Color.fromRGBO(0, 0, 0, 0.3),
+                    height: 1,
+                    thickness: 1,
+                  ),
+                  SizedBox(height: 16),
+                  Row(
+                    children: [
+                      Text(
+                        'Vendor',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            color: Color.fromRGBO(219, 185, 88, 1),
+                            fontSize: 20
+                        ),
+                      ),
+                      Spacer(),
+                      Text(
+                        'Megan Barnett',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
+                            fontSize: 18
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 16),
+                  Divider(
+                    color: Color.fromRGBO(0, 0, 0, 0.3),
+                    height: 1,
+                    thickness: 1,
+                  ),
+                  SizedBox(height: 16),
+                  Row(
+                    children: [
+                      Text(
+                        'Delivery Address',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w600,
+                            color: Color.fromRGBO(219, 185, 88, 1),
+                            fontSize: 20
+                        ),
+                      ),
+                      Spacer(),
+                      Flexible(
+                        child: Text(
+                          '4536 Kelley Road, Gulfport, Congo',
+                          style: TextStyle(
+                              fontWeight: FontWeight.w400,
+                              color: Colors.black,
+                              fontSize: 18
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 16),
+                  Divider(
+                    color: Color.fromRGBO(0, 0, 0, 0.3),
+                    height: 1,
+                    thickness: 1,
+                  ),
+                  SizedBox(height: 16),
                 ],
               ),
-              SizedBox(height: 16),
-              Divider(
-                color: Color.fromRGBO(0, 0, 0, 0.3),
-                height: 1,
-                thickness: 1,
-              ),
-              SizedBox(height: 16),
             ],
           ),
+          Center(
+            child: Row(
+              children: [
+                ElevatedButton(
+                  onPressed: () {
+                    // Handle cancel button press
+                  },
+
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: Size.fromHeight(70),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                  ),
+                  child: Text('Close', style: TextStyle(fontSize: 20, color: Colors.black),),
+                ),
+                SizedBox(width: 16),
+                ElevatedButton(
+                  onPressed: () {
+                    // Handle save button press
+                  },
+                  style: ElevatedButton.styleFrom(
+                      fixedSize: Size.fromHeight(70),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(50), // Set the borderRadius to 0 for rectangle shape
+                      ),
+                      primary: Color.fromRGBO(219, 185, 88, 1)
+                  ),
+                  child: Text('Cancel Order', style: TextStyle(fontSize: 20, color: Colors.white),),
+                ),
+              ],
+            ),
+          ),])
         ),
       ),
     );
