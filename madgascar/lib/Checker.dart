@@ -169,7 +169,7 @@ class Checker extends StatelessWidget{
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=> livestreamer010()));
                       },
-                      child: Text('View Live Streamers'),
+                      child: Text('View Live Streamers Activity'),
                     ),
                   ],
                 )
