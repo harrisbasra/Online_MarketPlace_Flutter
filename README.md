@@ -31,7 +31,8 @@ flutter pub get
 4. Run the application:
 
 flutter run
-Contributing
+
+## Contributing
 Contributions are welcome! If you have any ideas, suggestions, or bug reports, please create an issue or submit a pull request.
 
 ## License
