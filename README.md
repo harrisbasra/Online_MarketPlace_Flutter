@@ -25,10 +25,10 @@ This is a Flutter application for an online commerce platform inspired by Daraz.
 2. Navigate to the project directory:
 cd your-repo
 
-Install the dependencies:
+3. Install the dependencies:
 flutter pub get
 
-3. Run the application:
+4. Run the application:
 
 flutter run
 Contributing
